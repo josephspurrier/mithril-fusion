@@ -4,10 +4,13 @@
   "description": "Mithril with Fusion.js",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "fusion dev",
-    "legacy": "fusion dev --forceLegacyBuild",
-    "build": "fusion build"
+    "test": "fusion test",
+    "dev": "fusion dev --port 8080",
+    "dev-legacy": "fusion dev --port 8080 --forceLegacyBuild",
+    "build": "fusion build --production",
+    "build-dev": "fusion build --development",
+    "start": "fusion start --port 8080 --production",
+    "start-dev": "fusion start --port 8080--development"
   },
   "author": "Joseph Spurrier",
   "license": "MIT",

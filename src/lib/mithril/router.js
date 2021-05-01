@@ -18,7 +18,6 @@ else {
 const routers = new Set()
 
 history.listen(({ action, location }) => {
-    console.log(action, location)
     for (let resolve of routers) {
         resolve({ action, location: location, })
     }
