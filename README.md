@@ -1,6 +1,6 @@
 # Mithril with Fusion.js (Uber)
 
-This project show how to use Mithril with Fusion.js (Uber).
+[This project](https://github.com/josephspurrier/mithril-fusion) shows how to use Mithril with Fusion.js (Uber).
 
 These are the components:
 
