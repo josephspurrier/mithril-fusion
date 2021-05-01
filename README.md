@@ -11,7 +11,6 @@ These are the components:
 - [History](https://github.com/ReactTraining/history) - The history library lets you easily manage session history anywhere JavaScript runs.
 - [Mithril Node Render](https://github.com/MithrilJS/mithril-node-render) - Use mithril views to render server side.
 
-
 ## Usage
 
 ```bash
@@ -25,8 +24,11 @@ cd mithril-fusion
 npm install
 
 # Start the dev server using either dev or dev-legacy (for Edge and older browsers).
+# Legacy browsers: https://fusionjs.com/api/fusion-cli/docs/progressively-enhanced-bundles
 npm run dev
 npm run dev-legacy
 
 # Your browser will open to: http://localhost:8080
 ```
+
+You can read about the fusion-cli commands here: https://fusionjs.com/api/fusion-cli
