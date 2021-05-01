@@ -28,7 +28,6 @@ export const HomePage = () => {
             m('div', {}, [
                 m('div', [
                     'Home page.',
-                    m(m.route.Link, { href: '/about' }, 'About'),
                     m(Link, m('a[href=/about]', 'About')),
                     m(Link, m('a[href=/about2]', 'About2')),
                 ]),
@@ -42,7 +41,6 @@ export const AboutPage = () => {
             m('div', {}, [
                 m('div', [
                     'About page.',
-                    //m(m.route.Link, { href: '/' }, 'Home')
                     m(Link, m('a[href=/]', 'Home')),
                     m(Link, m('a[href=/about2]', 'About2')),
                 ]),
@@ -56,7 +54,6 @@ export const AboutPage2 = () => {
             m('div', {}, [
                 m('div', [
                     'About page 2.',
-                    //m(m.route.Link, { href: '/' }, 'Home')
                     m(Link, m('a[href=/]', 'Home')),
                     m(Link, m('a[href=/about]', 'About')),
                 ]),
@@ -70,7 +67,7 @@ export const ErrorPage = () => {
             m('div', {}, [
                 m('div', [
                     'Error page.',
-                    m(m.route.Link, { href: '/' }, 'Home')
+                    m(Link, m('a[href=/]', 'Home')),
                 ]),
             ]),
     };

@@ -1,6 +1,5 @@
 import App, { RenderToken } from 'fusion-core';
 
-
 export default async function start() {
     // Allow Mithril to work with SSR.
     if (!global.window) {
