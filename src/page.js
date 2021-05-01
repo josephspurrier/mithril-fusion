@@ -8,8 +8,7 @@ export const App = () => {
                 m(Router, {
                     '/': () => m(MainLayout, m(HomePage)),
                     '/about': () => m(MainLayout, m(AboutPage)),
-                    '/about2': () => m(MainLayout, m(AboutPage2)),
-                    '/:404?': () => m('p', '404!'),
+                    '/:404?': () => m(MainLayout, m(ErrorPage)),
                 }),
             ])
     };
@@ -27,9 +26,11 @@ export const HomePage = () => {
         view: () =>
             m('div', {}, [
                 m('div', [
-                    'Home page.',
-                    m(Link, m('a[href=/about]', 'About')),
-                    m(Link, m('a[href=/about2]', 'About2')),
+                    m("h1", "Home Page"),
+                    m("div",
+                        m(Link, m('a[href=/about]', 'About')),
+                    ),
+                    'This is the home page.',
                 ]),
             ]),
     };
@@ -40,22 +41,11 @@ export const AboutPage = () => {
         view: () =>
             m('div', {}, [
                 m('div', [
-                    'About page.',
-                    m(Link, m('a[href=/]', 'Home')),
-                    m(Link, m('a[href=/about2]', 'About2')),
-                ]),
-            ]),
-    };
-};
-
-export const AboutPage2 = () => {
-    return {
-        view: () =>
-            m('div', {}, [
-                m('div', [
-                    'About page 2.',
-                    m(Link, m('a[href=/]', 'Home')),
-                    m(Link, m('a[href=/about]', 'About')),
+                    m("h1", "About Page"),
+                    m("div",
+                        m(Link, m('a[href=/]', 'Home'))
+                    ),
+                    'This is the about page.',
                 ]),
             ]),
     };
@@ -66,8 +56,10 @@ export const ErrorPage = () => {
         view: () =>
             m('div', {}, [
                 m('div', [
-                    'Error page.',
-                    m(Link, m('a[href=/]', 'Home')),
+                    m("h1", "Page Not Found"),
+                    'The page does not exist.',
+                    ' ',
+                    m(Link, m('a[href=/]', 'Back')),
                 ]),
             ]),
     };

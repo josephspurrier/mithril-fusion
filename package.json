@@ -5,11 +5,13 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "fusion dev --forceLegacyBuild",
+    "dev": "fusion dev",
+    "legacy": "fusion dev --forceLegacyBuild",
     "build": "fusion build"
   },
   "author": "Joseph Spurrier",
   "license": "MIT",
+  "private": true,
   "dependencies": {
     "fusion-cli": "^2.17.1",
     "fusion-core": "^2.3.0",
