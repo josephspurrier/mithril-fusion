@@ -1,0 +1,20 @@
+{
+  "name": "mithril-fusion",
+  "version": "1.0.0",
+  "description": "Mithril with Fusion.js",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "fusion dev --forceLegacyBuild"
+  },
+  "author": "Joseph Spurrier",
+  "license": "MIT",
+  "dependencies": {
+    "fusion-cli": "^2.17.1",
+    "fusion-core": "^2.3.0",
+    "fusion-tokens": "^2.1.8",
+    "history": "^5.0.0",
+    "mithril": "^2.0.4",
+    "universal-router": "^9.0.1"
+  }
+}
